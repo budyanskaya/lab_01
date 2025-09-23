@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+
+package inventory;
+
+// Сервис для управления складскими остатками
+service InventoryControl {
+    // Client streaming RPC: клиент отправляет поток товаров для обновления
+    rpc BulkUpdateStock(stream StockItem) returns (BulkUpdateSummary) {}
+}
+
+// Сообщение, представляющее один товар на складе
+message StockItem {
+    string item_id = 1;       // Уникальный идентификатор товара (например, артикул)
+    string name = 2;          // Наименование товара
+    int32 new_quantity = 3;   // Новое количество на складе
+}
+
+// Итоговое сообщение от сервера после обработки всего потока
+message BulkUpdateSummary {
+    int32 items_processed = 1; // Количество обработанных товарных позиций
+    string message = 2;        // Сообщение о результате (например, "Обновление завершено")
+    bool success = 3;          // Общий статус операции
+}
