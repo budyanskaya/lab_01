@@ -121,7 +121,7 @@ python serser.py
 ```
 python client.py
 ```
-Все успешно выполнилось:
+Все успешно выполнилось, мы видим информацию о товарах на складе:
 
 <img width="805" height="597" alt="image" src="https://github.com/user-attachments/assets/9d1259fd-3a3d-49dc-952b-3db27e264697" />
 
