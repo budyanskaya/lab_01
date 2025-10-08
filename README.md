@@ -39,6 +39,9 @@
  * Доступные сервисы. Например, LogisticsService.
  * Методы сервиса. Основной метод — BulkUpdateStock(stream StockItem), предназначенный для массового обновления остатков на складе (Client-streaming RPC).
  * Структуры данных. Определяет сообщения StockItem (содержит идентификатор товара, склад, количество) и UpdateResponse (подтверждение или описание ошибок).
+
+<img width="703" height="580" alt="image" src="https://github.com/user-attachments/assets/516672c8-aeac-48aa-ac41-697792c06022" />
+
 ## Технологический стек
 1. Язык определения интерфейсов (IDL): Protocol Buffers (Protobuf)
 2. Фреймворк RPC: gRPC
