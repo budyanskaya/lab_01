@@ -40,7 +40,8 @@
  * Методы сервиса. Основной метод — BulkUpdateStock(stream StockItem), предназначенный для массового обновления остатков на складе (Client-streaming RPC).
  * Структуры данных. Определяет сообщения StockItem (содержит идентификатор товара, склад, количество) и UpdateResponse (подтверждение или описание ошибок).
 
-<img width="703" height="580" alt="image" src="https://github.com/user-attachments/assets/516672c8-aeac-48aa-ac41-697792c06022" />
+<img width="500" height="580" alt="image" src="https://github.com/user-attachments/assets/be4c7c8e-43e1-4797-bcb3-5315968e3e1c" />
+
 
 ## Технологический стек
 1. Язык определения интерфейсов (IDL): Protocol Buffers (Protobuf)
